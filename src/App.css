@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.crystal {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
