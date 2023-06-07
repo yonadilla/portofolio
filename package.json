@@ -2,12 +2,11 @@
   "name": "portofolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://yonadilla.github.io/portofolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -20,6 +19,7 @@
     "daisy": "^0.1.7",
     "gh-pages": "^5.0.0",
     "jquery": "^3.7.0",
+    "netlify-cli": "^15.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.4",
