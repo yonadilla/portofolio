@@ -25,6 +25,8 @@ function PojectPages() {
                 Detail={
                   "ini adalah protofolio pertama saya setelah belajar ReactJS"
                 }
+                pathLive={"https://yonadilla.github.io/portofolio/"}
+                pathGithub={"https://github.com/yonadilla/portofolio"}
                 buttonLive={"live ~"}
                 buttonGithub={"Github ~"}
               />

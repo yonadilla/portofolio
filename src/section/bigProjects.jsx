@@ -28,8 +28,8 @@ function BigProject() {
         Tools={"Html Css Tailwindcss daisy-ui ReactJS"}
         NameProject={"Portofolio pertama"}
         Detail={"ini adalah protofolio pertama saya setelah belajar ReactJS"}
-        pathLive={"https://www.flaticon.com/animated-icons-most-downloaded"}
-        pathGithub={"http://www.responsinator.com/?url=http%3A%2F%2Flocalhost%3A5173%2  F"}
+        pathLive={"https://yonadilla.github.io/portofolio/"}
+        pathGithub={"https://github.com/yonadilla/portofolio"}
         buttonLive={"Live~"}
         buttonGithub={"Github~"}
         />
