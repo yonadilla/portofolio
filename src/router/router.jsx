@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Loading from "../component/loading";
 
@@ -17,7 +17,7 @@ function Router() {
   );
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Suspense fallback={<Loading/>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -26,8 +26,8 @@ function Router() {
           <Route path="/Contacts" element={<ContactsPage />} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
-  );
+    </HashRouter>
+      );
 }
 
 function wait(time) {
