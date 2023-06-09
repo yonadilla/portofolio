@@ -85,7 +85,6 @@ function Form() {
           <div className="w-full px-3">
             <input
               className="appearance-none block w-full bg-gray-200 text-abu border border-white py-1 px-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="title"
               name="title"
               type="text"
               placeholder="Title"
@@ -109,8 +108,9 @@ function Form() {
           ></textarea>
         </div>
         <button
-          type="submit"
+          type="su  bmit"
           className="border border-solid border-primary py-2 px-4 hover:bg-primary hover:text-white"
+          onClick={handleSubmit}
         >
           send
         </button>

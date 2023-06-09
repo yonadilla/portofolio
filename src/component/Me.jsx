@@ -11,6 +11,7 @@ function Me() {
 
   useEffect(() => {
     if (inView == true) return setAnimation(true);
+    console.log("ini use Effect",inView);
   }, [inView]);
   return (
     <>
@@ -27,7 +28,7 @@ function Me() {
               onInit={(typewritter) => {
                 typewritter
                   .typeString(
-                    "<strong>hallo namaku yon<br/> saya adalah Front-end developer yang belajar secara otodidak dan bertempat tinggal di blora, Jawa tengah. saya bisa membuat website responsive dari 0 dan juga saya bisa membuat web berdasarkan design dari figma yang ada</strong>"
+                    "<span>Halo, nama saya Yon,<br/>  seorang Front-end web developer. Saya memiliki semangat yang besar dalam belajar secara otodidak dan menjelajahi dunia web. Berbasis di Blora, Jawa Tengah, saya telah membangun kemampuan untuk menciptakan website responsive dari awal. Selain itu, saya juga memiliki keahlian dalam mengimplementasikan desain dari Figma menjadi web yang fungsional dan menarik.<br/>Saya percaya bahwa pengalaman pengguna yang baik dan desain yang estetis adalah kunci dalam menciptakan pengalaman web yang luar biasa. Saya selalu bersemangat untuk berkontribusi dalam proyek-proyek menarik dan terus meningkatkan diri dalam industri yang terus berkembang ini.</span>"
                   )
                   .callFunction(() => {})
                   .start();

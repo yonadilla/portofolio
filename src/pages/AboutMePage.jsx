@@ -2,10 +2,14 @@ import Me from "../component/Me";
 import FunFact from "../section/funfact";
 import Skill from "../section/skill";
 import Header from "../section/Header";
+import { Suspense } from "react";
+import Loading from "../component/loading";
 
 function AboutMePages() {
   return (
     <div>
+      <Suspense fallback= {<Loading />} >
+
       <Header
         pages={
           <>
@@ -25,7 +29,8 @@ function AboutMePages() {
             </div>
           </>
         }
-      />
+        />
+        </Suspense>
     </div>
   );
 }

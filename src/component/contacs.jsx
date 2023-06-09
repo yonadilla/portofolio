@@ -13,8 +13,7 @@ function Contacs() {
   return (
     <>
       <div ref={ref} className=" lg:flex lg:justify-between">
-        <div className="w-full h-36 lg:w-1/2">
-          <div className=" lg:flex lg:justify-between">
+        <div className="w-full h-1/2  lg:flex lg:justify-between lg:w-1/3">
             {animation && (
               <Typewriter
                 options={{
@@ -24,16 +23,16 @@ function Contacs() {
                 onInit={(typewritter) => {
                   typewritter
                     .typeString(
-                      "<span>Saya terbuka untuk menjadi freelance atau fullTime. bagaimana pun jika ada pertanyaan jangan ragu hubungi saya</span>"
+                      "<span>Terima kasih telah mengunjungi halaman website saya! Saya siap untuk menjawab pertanyaan Anda, mendengar proyek menarik yang ingin Anda diskusikan, atau menjelajahi peluang kerja yang tersedia. Jangan ragu untuk menghubungi saya melalui informasi kontak di bawah ini. Saya akan merespons secepat mungkin. Saya sangat antusias untuk berkolaborasi dan menciptakan pengalaman web yang luar biasa bersama Anda!</span>"
                     )
                     .callFunction(() => {})
                     .start();
                 }}
               />
             )}
-          </div>
+          
         </div>
-        <div className={inView ? "animate-slideKiri w-full lg:w-1/2 " : " opacity-0"}>
+        <div className={inView ? " animate-slideKiri w-full lg:flex lg:w-1/2 " : " opacity-0"}>
           <Form />
         </div>
       </div>

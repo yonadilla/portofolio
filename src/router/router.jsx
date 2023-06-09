@@ -1,24 +1,16 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Loading from "../component/loading";
 
 function Router() {
-  const HomePage = lazy(() =>
-    wait(1500).then(() => import("../pages/HomePage"))
-  );
-  const Project = lazy(() =>
-    wait(1500).then(() => import("../pages/ProjectPages"))
-  );
-  const AboutPage = lazy(() =>
-    wait(1500).then(() => import("../pages/AboutMePage"))
-  );
-  const ContactsPage = lazy(() =>
-    wait(1500).then(() => import("../pages/ContactsPage"))
-  );
+  const HomePage = lazy(() => import("../pages/HomePage"))
+  const Project = lazy(() => import("../pages/ProjectPages"))
+  const AboutPage = lazy(() => import("../pages/AboutMePage"))
+  const ContactsPage = lazy(() => import("../pages/ContactsPage"))
 
   return (
     <HashRouter>
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Project" element={<Project />} />
@@ -27,7 +19,7 @@ function Router() {
         </Routes>
       </Suspense>
     </HashRouter>
-      );
+  );
 }
 
 function wait(time) {

@@ -60,12 +60,12 @@ function Skill() {
             />
           </div>
         </div>
-        <div className=" gap-2 flex text-xs flex-wrap flex-col h-64 w-fit lg:flex lg:flex-wrap-reverse lg:flex-col-reverse lg:justify-end lg:w-fit">
+        <div className=" gap-2 flex text-xs flex-wrap-reverse  lg:h-64  lg:flex-wrap-reverse lg:flex-col-reverse lg:justify-end lg:w-fit">
           <div className={inView ? "   animate-slideKiri" : " opacity-0"}>
             <SkillCard title={"Others"} stack={"HTML CSS SCSS API"} />
           </div>
           <div className={inView ? " animate-slideKiri" : "opacity-0"}>
-            <div className></div>
+
             <SkillCard
               title={"Tools"}
               stack={"vsCode daisy-ui Figma Git Github "}

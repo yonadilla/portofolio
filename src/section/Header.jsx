@@ -1,5 +1,6 @@
 import Logo from "../assets/Logo.svg";
 import Menu from "../assets/menu.svg";
+import Close from  "../assets/close.svg"
 import instagram from "../assets/instagram.svg";
 import Linkedin from "../assets/Linkedin.svg";
 import Github from "../assets/Github.svg";
@@ -16,14 +17,14 @@ function Header({ pages }) {
         <div className="drawer-content flex flex-col">
           {/* /<!-- Navbar --> */}
           <div className="hilang">
-            <div className=" hidden absolute mx-9">
+            <div className="hidden lg:absolute mx-9">
               <img src={Linkedin} alt="" />
               <img src={Github} alt="" />
               <img src={instagram} alt="" />
             </div>
           </div>
           <div className="flex items-center">
-            <div className="flex-1 flex-row mt-8 text-White pl-8 lg:pl-0 lg:pt-9 lg:mt-0 lg:mx-32">
+            <div className="flex-1 flex-row  text-White pl-8 lg:pl-0 lg:pt-9 lg:mt-0 lg:mx-32">
               <Link to={"/"}>
                 <img src={Logo} alt="" className="w-4 h-4 lg:w-8 lg:h-8" />
               </Link>
@@ -61,10 +62,10 @@ function Header({ pages }) {
                 </li>
               </ul>
             </div>
-            <div className="flex items-center mt-4  lg:hidden">
+            <div className="flex items-center  lg:hidden">
               <label
                 htmlFor="my-drawer-3"
-                className="btn btn-square btn-ghost mt-4 lg:mt-0"
+                className="btn btn-square btn-ghost mr-4 lg:mt-0"
               >
                 <img src={Menu} alt="" />
               </label>
@@ -79,6 +80,13 @@ function Header({ pages }) {
 
           <ul className=" menu p-4 w-80 text-abu bg-color-background">
             {/* <!-- Sidebar content here --> */}
+            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+            <label
+                htmlFor="my-drawer-3"
+                className=" relative left-48"
+              >
+                <img src={Close} alt="" />
+              </label>
             <li>
               <Link to={"/"}>
                 <p className=" focus:text-white">
